@@ -1,0 +1,11 @@
+{
+  "name": "lite-ai-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "轻盈 Lite 最小 AI 后端：/api/ai/assistant、/api/ai/nutrition（零依赖 Node）",
+  "scripts": {
+    "start": "node index.mjs",
+    "dev": "node --watch index.mjs"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedLocals": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@screens/*": [
+        "src/screens/*"
+      ],
+      "@navigation/*": [
+        "src/navigation/*"
+      ],
+      "@stores/*": [
+        "src/stores/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@theme/*": [
+        "src/theme/*"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@types/*": [
+        "src/types/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react-native",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js"
+  ]
+}
