@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build:web",
+  "outputDirectory": "dist-web-showcase",
+  "framework": null,
+  "functions": {
+    "api/[...path].mjs": {
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/((?!api/)[^.]*)$",
+      "destination": "/index.html"
+    }
+  ]
+}
