@@ -61,3 +61,4 @@ dist-web-showcase/
 /verify.mjs
 /tmp_verify_fn.mjs
 /probe*.ps1
+/dist-web-pages/

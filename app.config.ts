@@ -35,6 +35,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   plugins: ['expo-camera'],
   experiments: {
     typedRoutes: false,
+    // GitHub Pages 项目站点位于 /repo-name 子路径，构建时用 PAGES_BASE_URL 为静态资源加前缀。
+    ...(process.env.PAGES_BASE_URL ? { baseUrl: process.env.PAGES_BASE_URL } : {}),
   },
   extra: {
     // 生产环境强制同源（空串）：前端请求 /api/*（同源），绝不写死 localhost / 127.0.0.1。
@@ -46,6 +48,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
           ? process.env.EXPO_PUBLIC_API_URL
           : 'http://localhost:3000',
     appEnv: process.env.EXPO_PUBLIC_APP_ENV || 'development',
-    mockAI: false,
+    // 纯静态托管（无 AI 后端）时设为 1，AI 功能直接走本地规则，不发出注定 404 的请求。
+    mockAI: process.env.PAGES_MOCK_AI === '1',
   },
 });

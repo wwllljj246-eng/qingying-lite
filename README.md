@@ -30,6 +30,8 @@
 ## 启动方式
 
 > 仓库地址：https://github.com/wwllljj246-eng/qingying-lite
+> 在线体验：https://wwllljj246-eng.github.io/qingying-lite/
+> 在线版为纯静态 Web 构建，AI 功能使用本地规则，无需后端；完整 AI 能力需部署 `server/`。
 > AI 后端与 App 前端是两个独立进程，需要分别启动。
 
 ```bash
