@@ -37,3 +37,27 @@ package-lock.json.bak
 
 # Render 构建产物（由 Render 构建，不提交）
 dist-web-showcase/
+
+# 本地调试 / 截图 / 浏览器临时配置（可能含缓存与登录数据，绝不提交）
+/chrome_*/
+/accept-shots/
+/dist-web/
+/dist-web-audit/
+/dist-web-p4/
+/dist-web-phase3/
+/dbg.png
+/diag_*.png
+/p3_*.png
+/p4_*.png
+/shot_*.png
+/test-*.png
+/snap*.txt
+/tsc_*.txt
+/export_*.txt
+*.err
+/_*.mjs
+/_*.js
+/agent_init.js
+/verify.mjs
+/tmp_verify_fn.mjs
+/probe*.ps1

@@ -29,22 +29,30 @@
 
 ## 启动方式
 
+> 仓库地址：https://github.com/wwllljj246-eng/qingying-lite
+> AI 后端与 App 前端是两个独立进程，需要分别启动。
+
 ```bash
-# 安装依赖
+# 1) 安装依赖
 npm install
 
-# 启动开发服务（推荐：Expo Go App 扫码）
+# 2) 启动 AI 后端（端口 3000）
+#    如需真实 AI 识别：复制 .env.example 为 .env 并填入 AI_API_KEY（.env 已被忽略，切勿提交）
 npm start
 
-# 或直接指定平台
-npm run ios        # iOS 模拟器（需 macOS）
-npm run android    # Android 模拟器
+# 3) 另开一个终端启动 App（开发环境默认请求 http://localhost:3000）
 npm run web        # Web 浏览器
+npm run android    # Android 模拟器 / 真机
+npm run ios        # iOS 模拟器（需 macOS）
 ```
 
-**注意**：当前在 Windows 环境下：
-- 推荐用 **Expo Go** App 扫码运行（最快）
-- 长期方案：EAS Build 云端打包 iOS（需注册 Expo 账户）
+**真机说明**：项目依赖 `react-native-mmkv` 原生模块，**Expo Go 无法运行**，需使用 EAS 开发构建（配置见 `eas.json`，完整说明见 `DEPLOYMENT_REPORT.md`）：
+
+```bash
+npm run build:web                                    # 导出 Web 静态站到 dist-web-showcase/（部署用）
+eas build --platform ios --profile development       # iOS 云端构建，需 Expo 账号
+eas build --platform android --profile development   # Android 云端构建
+```
 
 ---
 
