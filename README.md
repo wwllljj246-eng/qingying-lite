@@ -6,6 +6,20 @@
 
 ---
 
+## 界面预览
+
+<p align="center">
+  <img src="docs/screenshots/home.png" alt="首页：体重趋势、今日状态与 AI 建议" width="220" />
+  <img src="docs/screenshots/diet.png" alt="饮食记录" width="220" />
+  <img src="docs/screenshots/exercise.png" alt="运动记录" width="220" />
+</p>
+
+从「拍照识别食物 → 确认份量 → 营养分析 → 保存」，到体重趋势、运动记录与周报告，数据即时同步。
+
+> 有想法或遇到问题？欢迎到 [Issues](https://github.com/wwllljj246-eng/qingying-lite/issues) 反馈。
+
+---
+
 ## 当前进度
 
 **Phase 0：项目初始化 ✅**
