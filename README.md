@@ -44,10 +44,9 @@
 ## 启动方式
 
 > 仓库地址：https://github.com/wwllljj246-eng/qingying-lite
-> 在线体验（推荐，国内可直连）：https://qingying-lite-q4ef3rc2.edgeone.cool?eo_token=b1b5caf6d91b2f5563e93e375b5e9de6&eo_time=1794058472
-> 备用地址（GitHub Pages，海外网络）：https://wwllljj246-eng.github.io/qingying-lite/
-> 在线体验链接请整串复制（含参数），只访问根域名会返回 401；链接失效时需重新部署更新。
+> 在线体验（长期有效、免登录）：https://wwllljj246-eng.github.io/qingying-lite/
 > 在线版为纯静态 Web 构建，AI 功能使用本地规则，无需后端；完整 AI 能力需部署 `server/`。
+> 国内网络访问 GitHub Pages 可能较慢或不稳定；如需国内稳定访问，需绑定已备案的自定义域名。
 > AI 后端与 App 前端是两个独立进程，需要分别启动。
 
 ```bash
